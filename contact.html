@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/header_image.png" alt="News Header" height="100px">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="watch.html">Watch</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main class="contact-page">
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, story tips, or story ideas, feel free to contact us using the form below.</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="94482ae9-b56f-4a71-a15e-06432a462686">
+                <label for="name">Story Title:</label>
+                <input type="text" id="name" name="name" placeholder="Your Story" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 KCVA News Channel 6. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
